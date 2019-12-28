@@ -4,13 +4,13 @@ GOAL :- Using Flask web application framework to serve as API request and deploy
 ## Flask Introduction
 
 * Importing flask module in the project is mandatory. 
-	from flask import Flask
+1. from flask import Flask
 
 * Flask constructor takes the name of current module (__name__) as argument.
-	app = Flask(__name__)
+2. app = Flask(__name__)
 
 * The route() decorator in Flask is used to bind URL to a function which tells the application which URL should call the associated function.
-	app.route(rule, options)
+3. app.route(rule, options)
 
 rule parameter: represents URL binding with the function.
 options: GET, POST methods to receive input objects and send output objects.
@@ -33,9 +33,7 @@ options: GET, POST methods to receive input objects and send output objects.
 * files − data pertaining to uploaded file.
 * method − current request method.
 
-* url_for() function : very useful for dynamically building a URL for a specific function. 
-*                     first argument : the name of a function
-*                     remaining arguments: each corresponding to the variable part of URL.
+* url_for() function : very useful for dynamically building a URL for a specific function. first argument : the name of a function. remaining arguments: each corresponding to the variable part of URL.
 
 * redirect() function: redirect current url to specific function url
 
